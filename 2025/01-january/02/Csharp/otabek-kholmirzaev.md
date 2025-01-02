@@ -1,7 +1,7 @@
 # [Count Vowel Strings in Ranges](https://leetcode.com/problems/count-vowel-strings-in-ranges/)
 
 ## Masala sharti
-So'zlardan tashkil topgan `words` massivi(array) va `queries` deb nomlangan so‘rovlar ro‘yxati berilgan. Har bir `queries[i]` so‘rov uchun javob sifatida `words` massividan `queries[i]` = [$l_i$, $r_i$] oraliqda joylashgan, **bosh va oxirgi harfi unli bo‘lgan so‘zlar sonini** toping.
+So'zlardan tashkil topgan `words` massivi(array) va `queries` deb nomlangan so‘rovlar ro‘yxati berilgan. Har bir `queries[i]` so‘rov uchun javob sifatida `words` massividan `queries[i]` = [$l_i, r_i$] oraliqda joylashgan, **bosh va oxirgi harfi unli bo‘lgan so‘zlar sonini** toping.
 
 ### Input 
 - `words = ["aba","bcb","ece","aa","e"]`
