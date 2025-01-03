@@ -6,6 +6,8 @@ Berilgan `nums` massivini shunday ajratish kerakki, har bir ajratish uchun chap 
 - Ajratish amalga oshirilgandan keyin chap qismning yig'indisi (har bir elementni qabul qilganda) o'ng qismning yig'indisidan katta yoki teng bo'lishi kerak.
 - Misol: `[1, 2, 3, 4, 5]` massivini ajratamiz. Agar chap qism `[1, 2, 3]` va o'ng qism `[4, 5]` bo'lsa, chap qismning yig'indisi 6 (1+2+3) va o'ng qismning yig'indisi 9 (4+5). Bu holda chap qismning yig'indisi o'ng qismga teng emas, shuning uchun bu ajratish noto'g'ri bo'ladi.
 
+ - Berilgan massivdagi barcha shunday indekslar sonini topingki, chap bo‘lakning yig‘indisi o‘ng bo‘lakning yig‘indisidan katta yoki teng bo‘lsin.
+
 ### Input
 - `nums = [10, 4, -8, 7]`
 
@@ -17,9 +19,9 @@ Berilgan `nums` massivini shunday ajratish kerakki, har bir ajratish uchun chap 
 ```java
 class Solution {
     public int waysToSplitArray(int[] nums) {
-        long sum = 0;
+        long totalSum = 0;
         for (int num : nums) {
-            sum += num;
+            totalSum += num;
         }
 
         int len = nums.length;
@@ -28,7 +30,7 @@ class Solution {
         int i = 0;
         while (i < len - 1) {
             leftSum += nums[i];
-            long rightSum = sum - leftSum;
+            long rightSum = totalSum - leftSum;
             if (leftSum >= rightSum) {
                 count++;
             }
@@ -42,11 +44,11 @@ class Solution {
 ## Tushuntirish
 
 1. **Jami yig'indini hisoblash:**
-   - Avvalo, massivning barcha elementlarini yig'ib, umumiy yig'indi `sum`ni hisoblaymiz. Bu yig'indini keyinchalik ajratishlar o'rtasida solishtirishda ishlatamiz.
+   - Avvalo, massivning barcha elementlarini yig'ib, umumiy yig'indi `totalSum`ni hisoblaymiz. Bu yig'indini keyinchalik ajratishlar o'rtasida solishtirishda ishlatamiz.
 
 2. **Chap va o'ng qismlarni hisoblash:**
    - `leftSum` o'zgaruvchisi yordamida chap qismining yig'indisini hisoblaymiz. Ya'ni, har bir yangi elementni qo'shgan sari chap qismning yig'indisi ortadi.
-   - `rightSum` o'zgaruvchisi esa o'ng qismning yig'indisini ifodalaydi, ya'ni `rightSum = sum - leftSum`. Bu, massivning umumiy yig'indisidan chap qism yig'indisini olib tashlab, o'ng qismining yig'indisini topadi.
+   - `rightSum` o'zgaruvchisi esa o'ng qismning yig'indisini ifodalaydi, ya'ni `rightSum = totalSum - leftSum`. Bu, massivning umumiy yig'indisidan chap qism yig'indisini olib tashlab, o'ng qismining yig'indisini topadi.
 
 3. **Ajratish shartlarini tekshirish:**
    - Har bir ajratish uchun `leftSum >= rightSum` shartini tekshiramiz. Agar chap qismning yig'indisi o'ng qismning yig'indisidan katta yoki teng bo'lsa, bu ajratish to'g'ri hisoblanadi, shuning uchun `count` (sanash) o'zgaruvchisini oshiramiz.
