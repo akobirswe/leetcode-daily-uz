@@ -6,7 +6,7 @@ Bu repository har kunlik LeetCode masalalari yechimlarini o'z ichiga oladi. Siz 
 
 1. **Repo'ni Fork Qiling:** Avvalo, ushbu repo'ni fork qiling.
 2. **Yangi Branch Yaratish:** Yangi branch yarating. Masalan, `your-username/01-january-python` nomi bilan.
-3. **Yechimni Qo'shish:** Yechimingizni qo'shayotganda quyidagi **folder structure**-dan foydalaning: `2025/01-january/01/Python/your-username.md`. **Folder structure** quyida alohida qilib ko'rsatib o'tilgan. 
+3. **Yechimni Qo'shish:** Yechimingizni qo'shayotganda quyidagi **folder structure**-dan foydalaning: `2025/january/01-day/Python/your-username.md`. **Folder structure** quyida alohida qilib ko'rsatib o'tilgan. 
 4. **Pull Request Yuborish:** Yechimni kiritganingizdan so'ng, pull request yuboring. Biz sizning yechimingizni ko'rib chiqamiz va repository'ga qo'shamiz.
 
 ## Repo Folder Structure:
@@ -14,8 +14,8 @@ Bu repository har kunlik LeetCode masalalari yechimlarini o'z ichiga oladi. Siz 
 leetcode-daily-uz/  
 │  
 ├── 2025/  
-│   ├── 01-january/  
-│   │   ├── 01/  
+│   ├── january/  
+│   │   ├── 01-day/  
 │   │   │   ├── Python/  
 │   │   │   │   ├── username1.md   
 │   │   │   │   ├── username2.md   
@@ -25,9 +25,9 @@ leetcode-daily-uz/
 │   │   │   ├── Csharp/   
 │   │   │   │   ├── username1.md   
 │   │   │   │   ├── username2.md    
-│   │   ├── 02/  
+│   │   ├── 02-day/  
 │   │       ├── ...  
-│   ├── 02-february/   
+│   ├── february/   
 │       ├── ...  
 
 ## Hissa qo'shuvchilar uchun tavsiyalar:
