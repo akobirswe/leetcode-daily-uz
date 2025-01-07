@@ -44,7 +44,7 @@ qo'shib boramiz.
 ## Murakkablik tahlili
 
 - **Vaqt murakkabligi:**  
-  - O(n^3)
+  - O(n^2)
 
 - **Xotira murakkabligi:**  
   - O(1)
